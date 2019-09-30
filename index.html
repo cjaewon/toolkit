@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JWN 툴킷</title>
+    <style>
+    .btn-margin{
+        margin-right:10px;
+    }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="/toolkit.png" width="30" height="30" class="d-inline-block align-top rounded" alt="">
+            <strong>JWN 툴킷</strong>
+        </a>
+        <button onclick="location.href='https://discord.gg/v6FVgyz';" class="btn btn-outline-dark my-2 my-sm-0" type="file">공식 디스코드</button>
+    </nav>
+
+    <div id="main">
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">JWN 툴킷</h1>
+            <p class="lead">JWN 툴킷은 웹에서 사용 가능한 다양한 기능을 모아둔 툴입니다.</p>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h3>툴 목록</h3>
+        </div>
+        <div class="row d-flex justify-content-center">
+            
+            <br>
+                <button onclick="location.href='/ip';" class="btn btn-outline-success btn-margin">내 아이피</button>
+                <button class="btn btn-outline-danger">이미지 리사이즈</button>
+        </div>
+        <br><br><br>
+        
+        <div class="row d-flex justify-content-center">
+                <p class="lead">문의 & 소통을 하는 디스코드입니다.</p>
+            </div>
+        <div class="row d-flex justify-content-center">
+            <button onclick="location.href='https://discord.gg/v6FVgyz';" class="btn btn-outline-dark my-2 my-sm-0" type="file">공식 디스코드</button>
+        </div>
+    </div>
+
+    <div id="layout">
+        <div id="disqus">
+            <div id="disqus_thread" style="padding-top: 30px; max-width: 880px; margin-left: auto; margin-right: auto;"></div>
+            <script>
+
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://jtoolkit.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+        <div id="analytics">
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149007279-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-149007279-1');
+            </script>
+        </div>
+    </div>
+</body>
+</html>
