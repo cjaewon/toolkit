@@ -33,15 +33,20 @@
         <div class="row d-flex justify-content-center">
             <h5>당신의 공인 아이피 주소입니다.</h5>
         </div>
+        <br><br><br><br>
         <div class="row d-flex justify-content-center">
-
+            <ul class="list-group list-group-flush">
+                <a :href="'http://'+ip" class="list-group-item">http://{{ ip }}</a>
+                <a :href="'http://'+ip+':3000'" class="list-group-item">http://{{ ip }}:3000</a>
+                <a :href="'http://'+ip+':8080'" class="list-group-item">http://{{ ip }}:8080</a>
+              </ul>
         </div>
     </div>
     <script>
         var app = new Vue({
             el: '#main',
             data: {
-                ip: '가져오는 중'
+                ip: '가져오는 중',
             }
         })
         function getip(data){
