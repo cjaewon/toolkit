@@ -13,11 +13,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/">
             <img src="/toolkit.png" width="30" height="30" class="d-inline-block align-top rounded" alt="">
             <strong>JWN 툴킷</strong>
         </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">홈<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+        </div>
         <button onclick="location.href='https://discord.gg/v6FVgyz';" class="btn btn-outline-dark my-2 my-sm-0" type="file">공식 디스코드</button>
     </nav>
 
@@ -33,7 +40,7 @@
             
             <br>
                 <button onclick="location.href='/ip';" class="btn btn-outline-success btn-margin">내 아이피</button>
-                <button class="btn btn-outline-danger">마크다운 에디터</button>
+                <button class="btn btn-outline-danger">마크다운 html 변환기</button>
         </div>
         <br><br><br>
         
