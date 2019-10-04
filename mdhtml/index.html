@@ -60,8 +60,39 @@
         var app = new Vue({
             el: '#main',
             data: {
-                markdown: '',
-                html: '',
+                markdown: `
+# Markdown Html Converter
+
+![mainimg](/img/mdtohtml.png)
+
+- Cool
+- Awsome
+- Useful
+
+
+\`\`\`c
+#include<stdio.h>
+int main(){
+    printf("Hello world");
+    return 0;
+}
+\`\`\`
+`,
+                html: `
+<h1 id="markdownhtmlconverter">Markdown Html Converter</h1>
+<p><img src="/img/mdtohtml.png" alt="mainimg" /></p>
+<ul>
+<li>Cool</li>
+<li>Awsome</li>
+<li>Useful</li>
+</ul>
+<pre><code class="c language-c">#include&lt;stdio.h&gt;
+int main(){
+    printf("Hello world");
+    return 0;
+}
+</code></pre>
+`,
             },
             methods: {
                 copy() {
